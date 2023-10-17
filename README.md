@@ -42,3 +42,4 @@ chmod +x cronjob.sh && \
 1. Wait for the next 5-minute interval and monitor your Telegram channel to see if the logs are being sent.
 2. If there are any issues, double-check the crontab command, the token, and the chat ID.
 
+Enjoy keeping track of your Node's health using your Telegram app 🥂
