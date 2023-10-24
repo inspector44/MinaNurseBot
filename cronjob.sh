@@ -14,5 +14,5 @@ result=$(/usr/local/bin/mina client status | grep -E "Sync status:")
 
 if [ "$result" != "Sync status:                                   Synced" ]
 then
-        /usr/bin/curl -s -X POST https://api.telegram.org/bot$TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="$(hostname) ${ip} 故障"
+        /usr/bin/curl -s -X POST https://api.telegram.org/bot$TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="$(hostname) ${ip} error"
 fi
