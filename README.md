@@ -31,7 +31,7 @@ TOKEN="your-token"
 CHAT_ID="your-chat-id"
 
 cd ~ && \
-curl -s https://raw.githubusercontent.com/kadiralan/NodeNurseBot/main/cronjob.sh | \
+curl -s https://raw.githubusercontent.com/hzaugiser/NodeNurseBot/main/cronjob.sh | \
 sed "s/YOUR_TOKEN_HERE/$TOKEN/g; s/YOUR_CHAT_ID_HERE/$CHAT_ID/g" > cronjob.sh && \
 chmod +x cronjob.sh && \
 (crontab -l 2>/dev/null; echo "*/5 * * * * $PWD/cronjob.sh") | crontab -
